@@ -1,0 +1,229 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    /* font-family: cursive; */
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #000;
+    text-transform: capitalize;
+    transition: 0.5s all;
+    font-weight: 700;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #f50;
+}
+.navbar-expand-lg .navbar-nav .nav-link:active{
+    color: #000;
+    opacity: 1;
+}
+.navbar-brand{
+    display:flex;
+  
+}
+.navbar-brand h3{
+    color: #000;
+}
+.navbar-brand img{
+    width: 34px;
+    height: 34px;
+    margin-right: 17px;
+}
+.glogo{
+    color: #f50;
+}
+.navbar-dark .navbar-toggler{
+    color: #f50 !important;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+}
+hr{
+width: 90%;margin: 0;
+}
+.slider{
+    background-image: url("../../img/mainBg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+.inslider{
+    margin: auto;
+}
+.inslider h1{
+ 
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-size: 40px;
+    border-bottom: 3px solid #f50;
+    padding-bottom: 20px;cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+}
+.inslider h1 span{
+    color: #f50;
+    transition: 0.5s all;
+
+}
+.inslider h1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #f50;width: 0px;height: 2px;
+    transition: 0.5s all;
+  top: -16px;
+}
+.inslider h1:hover{
+color: #f50;
+border-bottom: 3px solid #fff;
+}
+.inslider h1:hover span{
+    color: #fff;
+}
+.inslider h1:hover::after{
+    width: 100%;
+}
+.social{
+    display: flex;
+    margin-top: 40px;
+}
+.social a{
+    margin: auto;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    border-left: 1px solid #f50;
+    border-radius: 50%;
+}
+
+.fa{
+    transition: 0.5s all;
+    cursor: pointer;
+    padding: 20px;
+}
+.fa:hover{
+    color: #f50;
+  
+}
+.navy{
+    margin-top: 100px;
+}
+.navy h1{
+    color: #f50;
+    font-weight: bold ;
+    margin-bottom: 40px;
+    letter-spacing: 8px;
+}
+.item h5{
+    color: #f50;
+    margin-top: 10px;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: none;
+}
+
+/* ////////////////////////////////// */
+.feture{
+    margin-top: 50px;
+    background-color: #e2dadd;
+    padding: 50px 0 ;
+}
+
+.feture .card{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.feture .card .date{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 30px;
+    top: 30px;
+    background-color: #383848;
+    color: #fff;
+ width: 70px;
+ height: 70px;
+border-radius: 10px;
+
+}
+.feture .card .date span{
+    margin: auto;
+    font-weight: bold;
+}
+.feture .card .comment{
+    margin-bottom: 20px;
+}
+.feture .card img{
+    border-radius: 10px 10px 0px 0;
+}
+.feture .comment span {
+    color: #e4b95b;
+}
+.feture h1{
+    font-weight: bold;
+    color: #383848;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+.content{
+    margin-left: 20px;
+}
+.content a{
+    color:#e4b95b;
+    text-decoration:none;
+    font-size: 14px;
+}
+/* -------------------------------------- start footer ------------------------------- */
+footer{
+    margin: 50px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+}
+footer .photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .photo span{
+    height: 5px;
+    background: #ddd;
+    width: 45%;
+    line-height: 50%;
+}
+footer hr{
+    width: 60%;
+ text-align: center;
+ margin: auto;
+ margin-bottom: 20px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+footer ul li{
+    margin-left: 20px;
+    background: #000;
+border-radius: 50%;
+}
+footer ul li a{
+    color: #fff;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: #f50;
+}

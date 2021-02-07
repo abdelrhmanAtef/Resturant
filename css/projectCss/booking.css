@@ -1,0 +1,104 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    font-family: cursive;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #000;
+    text-transform: capitalize;
+    transition: 0.5s all;
+    font-weight: 700;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #f50;
+}
+.navbar-expand-lg .navbar-nav .nav-link:active{
+    color: #000;
+    opacity: 1;
+}
+.navbar-brand{
+    display:flex;
+  
+}
+.navbar-brand h3{
+    color: #000;
+}
+.navbar-brand img{
+    width: 34px;
+    height: 34px;
+    margin-right: 17px;
+}
+.glogo{
+    color: #f50;
+}
+.navbar-dark .navbar-toggler{
+    color: #f50 !important;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+}
+hr{
+width: 90%;
+}
+.booking{
+    position: relative;
+    margin-top: 50px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.title h2{
+letter-spacing: 8px;
+}
+.title img{
+    position: absolute;
+    width: 300px;
+    top: -30px;
+}
+form .data{
+    margin-bottom: 20px;
+}
+
+form input::placeholder{
+    text-align: center;
+}
+form .left input::placeholder {
+    text-align: left;
+}
+form .btn{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background: rgba(255, 85, 0, 0.664);
+    outline: none !important;
+    border: none !important;
+    transition: 0.5s all;
+    font-weight: 700;
+ 
+}
+
+form .btn:hover , form .btn:active{
+    background: #f50;
+    color: #000;
+    outline: none !important;
+    border: none !important;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus{
+    box-shadow: none;
+}
+textarea{
+    resize: none;
+}

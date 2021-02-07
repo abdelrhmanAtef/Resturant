@@ -1,0 +1,737 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    /* font-family:'Sofia', cursive; */
+    font-family: cursive;
+
+    overflow: hidden;
+}
+/* ------------------------------- start nav bar css ----------------------- */
+.navbar{
+    position:absolute;
+    width: 100%;
+    z-index: 99999;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.5s all;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #f50;
+}
+.navbar-brand{
+    display:flex
+}
+.navbar-brand img{
+    width: 34px;
+    height: 34px;
+    margin-right: 17px;
+}
+.glogo{
+    color: #f50;
+}
+/* ------------------------------- end nav bar css ----------------------- */
+/* ------------------------------- start slide section css ----------------------- */
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../img/slider/slider1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.slide .arrow{
+    position: absolute;
+    bottom: 40px;
+ font-size: 20px;
+ color: #fff;
+ border: 2px solid #fff;
+ padding:10px;
+ border-radius: 30%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ opacity: 0.5;
+ cursor: pointer;
+}
+.slide .arrow i{
+position: relative;
+opacity: 0.5;
+transition: 0.5s all;
+animation: arrow 2s infinite ease-in-out;
+} 
+@keyframes arrow{
+    0%{
+        bottom: 10px;
+    }
+    50%{
+        bottom: -2px;
+    }
+    70%{
+        bottom: -8px;
+    }
+    100%{
+        bottom: -12px;
+    }
+}
+/* ------------------------------- end slide section css ----------------------- */
+/* ----------------------------- start production section css ----------------------- */
+.production , .rich{
+    position: relative;
+    margin-top: 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title img{
+    position: absolute;
+    width: 300px;
+    top: -30px;
+}
+.sweet{
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+.sweet:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px #ddd ,-2px -2px 10px #ddd ,2px 2px 10px #f50 ,-10px -2px 10px #ddd;
+    
+}
+.first ,
+ .third{
+    margin-top: 120px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0; 
+    display: flex;
+}
+.in-over{
+ position: relative;
+ z-index: 1;
+ margin: auto;
+
+}
+.in-over h5{
+    color: #f50;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+.in-over span {
+    width: 30px;
+    width: 128px;
+    height: 10x !important;
+    display: block;
+    height: 3px;
+    margin:10px auto;
+    background-color: #f50;
+}
+.in-over p{
+    color: #eee;
+    margin-top: 20px;
+}
+@media(min-width:768px) and (max-width:991px){
+    .in-over h5{
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    .in-over p{
+       font-size: 16px;
+    }   
+}
+@media(max-width:767px){
+    .title{
+        margin-bottom: 50px;
+    }
+    .first ,.third{
+    margin:0
+}
+.sweet{
+    margin-bottom: 30px;
+}
+.sweet:hover{
+    transform: scale(1);
+}
+
+} 
+
+/* ----------------------------- end production section css ----------------------- */
+/* ----------------------------- start menu section css ----------------------- */
+/* .menu{
+    margin-top: 80px;
+}
+.menu h3{
+    font-weight: bold;
+}
+.a-dot{
+    display: flex;
+    display: none;
+}
+.a-dot li{
+width: 10px;
+height: 10px;
+background-color: #333;
+border-radius: 50%;
+margin-left: 5px;
+cursor: pointer;
+}
+.b-dot{
+    display: flex;
+    flex-direction: column;
+     background-color: #eee;
+     position: absolute;
+     width: 80%;
+     z-index: 909099999;
+     cursor: pointer;
+     left: 50%;
+     transform: translateX(-50%);
+     display: none;
+}
+.b-dot li{
+    margin-left: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+}
+.c-dot{
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.b-dot li:hover ,
+.c-dot li:hover{
+    color: #f50;
+}
+
+.foode-img .col-md-3{
+    position: relative;
+}
+.foode-img .col-md-3::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    background-color: #f50;
+
+}
+.active{
+    color: #f50;
+}
+@media(max-width:678px){
+    .c-dot{
+        display: none !important;
+    }
+    .a-dot{
+        display:flex;
+    }
+}  */
+.list{
+    margin-top: 50px;
+    background-color:#f4f2ed;
+    padding: 40px;
+    position: relative;
+}
+.list .positin{
+    position: absolute;
+}
+.list .positin:nth-of-type(1){
+   left: 30px;
+   top: 50px;
+}
+.list .positin:nth-of-type(2){
+    right: 30px;
+    top: 50px;
+ }
+ .list .positin:nth-of-type(3){
+    right: 30px;
+    bottom: 50px;
+ }
+ .list .positin:nth-of-type(4){
+    left:30px;
+    bottom: 50px;
+ }
+.select{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.dlist{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow:0px 2px 10px  rgb(0,0,0,0.5) ;
+}
+.dlist p{
+    padding: 13px 20px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(32, 32, 47);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 0px;
+}
+.activate{
+    background-color: rgb(32, 32, 47);
+    color: #fff !important;
+    padding: 13px 36px;
+}
+@media(max-width:500px){
+    .select{
+width: 100%;
+    }
+    .dlist p{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+.list-menu{
+    margin-bottom: 30px;display: flex;
+}
+.list-menu img{
+   margin-right: 10px;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+.list-menu .type{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  
+}
+.list-menu .type div{
+    display: flex; justify-content: space-between;
+    border-bottom: 2px dashed #fff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.list-menu .type h5{
+    font-weight: bold;
+    color:#20202f;
+    opacity: 0.8;
+}
+.list-menu .type  span{
+    color: #f50;
+}
+
+/* ----------------------------- start menu section css ----------------------- */
+/* ----------------------------- start specail section css ----------------------- */
+.specail{
+   background-image: url("../../img/specail/offer-background.jpg");
+   background-position: center center;
+   background-size: cover;
+   padding: 50px 0;
+   margin-bottom: 100px;
+   }
+   .specail h1{
+       color: #f50;
+       font-weight: bold;
+       margin-top: 40px;
+       letter-spacing: 5px;
+       padding-bottom: 40px;
+   }
+   .specail  .plate h3{
+   color: #fff;
+   padding: 0;
+   }
+   .specail  .plate p{
+       color: #e2dadd;
+   }
+   .specail  .plate {
+   cursor: pointer;
+   margin-bottom: 30px;
+   }
+   .specail  .plate span:nth-of-type(1){
+       text-decoration:line-through;
+       color: #e2dadd;
+       margin-right: 20px;
+       }
+       .specail  .plate span:nth-of-type(2){
+           color: #f50;
+           }
+/* ----------------------------- end spical section css ----------------------- */
+/* ----------------------------- start after-menu section css ----------------------- */
+.after-menu{
+    position: relative;
+    background-image: url("../../img/aftermenu/26.webp");
+    background-position: center center;
+    height: 700px;
+}
+.after-menu .pdf{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.after-menu .pdf h1:nth-of-type(1){
+    font-family: 'Satisfy', cursive;
+}
+.after-menu h1:nth-of-type(1){
+    font-family: 'Parisienne', cursive;
+    font-size: 110px;color: #f50;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+.after-menu h1:nth-of-type(2){
+    font-weight: bold;
+    /* font-size: 50px; */
+    margin-bottom: 30px;
+}
+.after-menu a , .conect button{
+    background: #f50; 
+    text-decoration: none;
+    padding:10px 30px;
+    color: #fff;
+    font-weight:bold;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none !important;
+    border: none !important;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.after-menu a:hover , .conect button:hover{
+    background-color: #333;
+
+}
+@media(max-width:767px){
+    .after-menu{
+        background-image: none;
+    }
+    .after-menu .pdf{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .after-menu h1:nth-of-type(2){
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .after-menu .pdf{
+        text-align: center;width: 250px !important;display: block;
+    }
+    .after-menu h1:nth-of-type(1){
+    
+        font-size: 90px;
+    }
+    .after-menu h1:nth-of-type(2){
+        font-weight: bold;
+        font-size: 40px;
+    }
+}
+/* ----------------------------- end after-menu section css ----------------------- */
+/* ----------------------------- start offer section css ----------------------- */
+.offer{
+    margin-top: 70px;
+}
+.offer h3{
+    color: #f50;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.offer span{
+    width: 250px;
+    height: 4px;
+    background: #f50;
+    opacity: 0.5;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.offer .inOffer{
+    background-image: url("../../img/offer/head2.png");
+    background-position: center center;
+    background-size: cover;
+    height: 500px; 
+    display: flex;
+}
+.offer .inOffer .details{
+    margin:auto;
+    width: 35%;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.offer .inOffer .details h1{
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+@media(max-width:768px){
+    .offer .inOffer .details {
+        width: 70%;
+    }
+    .offer .inOffer .details p{
+        padding: 10px;
+    }
+}
+/* ----------------------------- end offer section css ----------------------- */
+/* ----------------------------- start rich section css ----------------------- */
+ .rich{
+    position: relative;
+    margin-top: 100px;
+}
+.rich .title{
+    margin-bottom: 80px;
+}
+.rich img{
+    position: absolute;
+    width: 400px;
+    top: -30px;
+}
+.rich .rhead{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.rich .how{
+    height: 200px;
+    background-color: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.rich .how span{
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.8;
+    color: #fff;
+    z-index: -1;
+}
+.rich .how h5{
+    color: #f50;
+    text-transform: uppercase;
+  
+}
+.rich .num{
+  background-color:#151a28;
+  color: #fff;
+height: 300px;
+transform: translateY(-50px);
+}
+.rich .num p{
+    color: #eee;
+}
+.rich .num span{
+    opacity: 1;
+}
+.rich .how p{
+    width: 90%;
+}
+@media(max-width:768px){
+    .rich .num{
+        transform: translateY(0);  
+    }
+}
+/* ----------------------------- end rich section css ----------------------- */
+/* ////////////////////////// start conect section////////////////////// */
+.conect{
+background-image: url("../../img/conect.jpg");
+background-size: cover;
+background-position: center center;
+margin-top: 50px;
+padding: 20px 0;
+}
+.conect .data{
+    background-color: #fff;width: 100%;display: block;padding: 30px
+}
+.data-a h2{
+    margin-bottom: 40px;
+}
+.data-a input , select{
+    padding-left: 20px;
+    width: 100%;
+    display: block;
+    height: 55px!important;
+    margin-bottom: 30px;
+    outline: none;
+    border: 1px solid #ddd;
+    background: #eee;
+    
+}
+.telephone i, .mail i{
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #f50;
+} 
+.call h4{
+    margin-top: 30px;
+    font-weight: bold;
+}
+.data-a input::placeholder{
+    color: #f50;
+}
+.name{
+    position: relative;
+}
+.name i{
+    position:absolute;
+    right: 16px;
+    top: 17px;
+    color: #bbb;
+    font-size: 19px;
+}
+/* ///////////////////////////end conect section///////////////////// */
+/* -------------------------------------- start footer ------------------------------- */
+footer{
+    margin: 50px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+}
+footer .photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .photo span{
+    height: 5px;
+    background: #ddd;
+    width: 45%;
+    line-height: 50%;
+}
+footer hr{
+    width: 60%;
+ text-align: center;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul li{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+ line-height: 40px;
+}
+footer ul li a{
+    color: #fff;
+    transition: 0.5s all;
+}
+footer ul li a:hover{
+    color: #f50;
+}
+/* -------------------------------------- end footer ------------------------------- */
+/* -------------------------start  click to move up button --------------------   */
+.move{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #f50;
+  border: 2px solid #f50;
+    text-align: center;
+    display: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    transition:all 0.5s;
+    z-index: 999999;
+} 
+/* -------------------------end  click to move up button --------------------   */
+#loading{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
